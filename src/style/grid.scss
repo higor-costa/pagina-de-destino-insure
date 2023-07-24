@@ -23,3 +23,9 @@ $s-device: 480px;
 
   @return $result;
 }
+
+@for $i from 1 through $colunas {
+  .grid-#{$i} {
+    width: grid($i);
+  }
+}
