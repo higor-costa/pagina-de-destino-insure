@@ -11,3 +11,15 @@ $s-device: 480px;
 *::after {
   box-sizing: border-box;
 }
+
+// Função de grid
+@function grid($colunas, $offset: false) {
+  $width: $coluna /  $colunas * 100 + '%';
+  $result: calc(#{$width} - #{$gutter});
+  @if $offset == offset {
+    $gutter: $gutter / 2;
+    $result: calc(#{$width} + #{$gutter});
+  }
+
+  @return $result;
+}
