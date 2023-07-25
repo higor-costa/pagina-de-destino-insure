@@ -93,3 +93,19 @@ $s-device: 480px;
 .container {
   @include container;
 }
+
+// row
+@mixin row {
+  position: relative;
+  margin-left: calc(-#{$gutter} / 2);
+  margin-right: calc(-#{$gutter} / 2);
+  @include device(s) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include clearfix;
+}
+
+.row {
+  @include row;
+}
