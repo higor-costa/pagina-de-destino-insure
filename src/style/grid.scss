@@ -13,7 +13,7 @@ $s-device: 480px;
 }
 
 // Função de grid
-@function grid($colunas, $offset: false) {
+@function grid($coluna, $offset: false) {
   $width: $coluna /  $colunas * 100 + '%';
   $result: calc(#{$width} - #{$gutter});
   @if $offset == offset {
