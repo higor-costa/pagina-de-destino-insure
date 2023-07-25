@@ -49,3 +49,17 @@ $s-device: 480px;
 [class^='grid-'] {
   @include estrutura-grid;
 }
+
+// Gera as classes de offset
+@for $i from 1 through $colunas {
+  .offset-#{$i} {
+    margin-left: grid($i, offset);
+    @extend %offset !optional;
+  }
+}
+
+@include device(s) {
+  %offset {
+    margin-left: 0;
+  }
+}
