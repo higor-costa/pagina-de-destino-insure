@@ -1,3 +1,16 @@
+// Cores
+
+// Principal
+
+$violeta-escuro: hsl(256, 26%, 20%);
+$azul-acinzentado: hsl(216, 30%, 68%);
+
+// Neutro
+
+$violeta-muito-escuro: hsl(270, 9%, 17%);
+$violeta-acinzentado-escuro: hsl(273, 4%, 51%);
+$cinza-muito-claro: hsl(0, 0%, 98%);
+
 // Mixin de media-query
 @mixin device($size) {
   @if $size == l {
