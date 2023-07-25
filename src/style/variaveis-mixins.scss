@@ -13,6 +13,11 @@ $violeta-muito-escuro: hsl(270, 9%, 17%);
 $violeta-acinzentado-escuro: hsl(273, 4%, 51%);
 $cinza-muito-claro: hsl(0, 0%, 98%);
 
+// Fontes
+
+$fonte-titulo: 'DM Serif Display', serif;
+$fonte-texto: 'Karla', sans-serif;
+
 // Mixin de media-query
 @mixin device($size) {
   @if $size == l {
