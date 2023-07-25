@@ -31,3 +31,21 @@ $s-device: 480px;
     width: grid($i);
   }
 }
+
+// Estrutura do Grid
+@mixin estrutura-grid {
+  float: left;
+  min-height: 1px;
+  margin-left: calc($gutter / 2);
+  margin-right: calc($gutter / 2);
+  @include device(s) {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+[class^='grid-'] {
+  @include estrutura-grid;
+}
