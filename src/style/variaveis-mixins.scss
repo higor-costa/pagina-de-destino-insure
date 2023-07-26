@@ -45,6 +45,19 @@ $fonte-texto: 'Karla', sans-serif;
   }
 }
 
+// Tamanho de fonte para parágrafos
+@mixin fonte-texto($tamanho) {
+  font-family: $fonte-texto;
+  @if $tamanho == 16 {
+    font-size: em(16);
+    line-height: em(25, 16);
+  }
+  @else if $tamanho == 18 {
+    font-size: em(18);
+    line-height: em(30, 18);
+  }
+}
+
 // Mixin de media-query
 @mixin device($size) {
   @if $size == l {
