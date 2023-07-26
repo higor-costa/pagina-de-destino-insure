@@ -18,6 +18,11 @@ $cinza-muito-claro: hsl(0, 0%, 98%);
 $fonte-titulo: 'DM Serif Display', serif;
 $fonte-texto: 'Karla', sans-serif;
 
+// Gera font-size
+@function em($pixel, $contexto: 16) {
+  @return calc($pixel / $contexto) + em;
+}
+
 // Mixin de media-query
 @mixin device($size) {
   @if $size == l {
