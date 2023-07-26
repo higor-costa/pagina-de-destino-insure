@@ -23,6 +23,28 @@ $fonte-texto: 'Karla', sans-serif;
   @return calc($pixel / $contexto) + em;
 }
 
+// Tamanho de fonte para titulo
+@mixin fonte-titulo($tamanho) {
+  font-family: $fonte-titulo;
+  @if $tamanho == 55 {
+    font-size: em(55);
+    line-height: em(50, 55);
+  }
+  @else if $tamanho == 50 {
+    font-size: em(50);
+  }
+  @else if $tamanho == 45 {
+    font-size: em(45);
+    line-height: em(50, 55);
+  }
+  @else if $tamanho == 26 {
+    font-size: em(26);
+  }
+  @else if $tamanho == 18 {
+    font-size: em(18);
+  }
+}
+
 // Mixin de media-query
 @mixin device($size) {
   @if $size == l {
