@@ -7,7 +7,7 @@ import patternIntroLeft from '../img/bg-pattern-intro-left-mobile.svg'
 import patternIntroRight from '../img/bg-pattern-intro-right-mobile.svg'
 import patternNav from '../img/bg-pattern-mobile-nav.svg'
 import useMedia from '../hooks/useMedia';
-import styles from '../style/components/Header.module.scss' ;
+import styles from '../style/components/Header.module.scss';
 
 const Header = () => {
   const mobile = useMedia('(max-width: 767px');
@@ -18,9 +18,9 @@ const Header = () => {
       <nav>
         <Logo />
         {mobile && (
-          <button 
+          <button
             onClick={() => setMobileMenu(!mobileMenu)}
-            aria-label='menu'
+            aria-label="menu"
             className={`${styles.botaoMenu}`}
           >
             {mobileMenu ? <IconeClose /> : <IconeHamburger />}
