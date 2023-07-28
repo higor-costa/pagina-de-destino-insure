@@ -37,6 +37,27 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+      <main>
+        <div>
+          <div>
+            {mobile && <img src={patternIntroLeft} alt="Left Illustration" />}
+            <h1>
+              Humanizing <br /> your insurance.
+            </h1>
+            <p>
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that´s right for
+              you. Ensure you and loved ones are protected.
+            </p>
+            <a href="#">View Plans</a>
+            {mobile && <img src={patternIntroRight} alt="Right Illustration" />}
+          </div>
+          <div>
+            <img src={imageIntro} alt="Family photo" />
+          </div>
+        </div>
+      </main>
     </header>
   );
 };
