@@ -39,6 +39,7 @@ const Header = () => {
           <li>
             <a href="#">View Plans</a>
           </li>
+          <img src={patternNav} alt="Illustration" />
         </ul>
       </nav>
 
