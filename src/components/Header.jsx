@@ -5,6 +5,8 @@ import { ReactComponent as IconeClose } from '../img/icon-close.svg';
 import useMedia from '../hooks/useMedia';
 
 const Header = () => {
+  const mobile = useMedia('(max-width: 767px');
+  const [mobileMenu, setMobileMenu] = React.useState(false);
 
   return (
     <header>
