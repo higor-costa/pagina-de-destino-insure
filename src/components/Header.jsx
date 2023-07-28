@@ -12,6 +12,15 @@ const Header = () => {
     <header>
       <nav>
         <Logo />
+        {mobile && (
+          <button 
+            onClick={() => setMobileMenu(!mobileMenu)}
+            aria-label='menu'
+            className={`${styles.botaoMenu}`}
+          >
+            {mobileMenu ? <IconeClose /> : <IconeHamburger />}
+          </button>
+        )}
         <ul>
           <li>
             <a href="#">How We Work</a>
