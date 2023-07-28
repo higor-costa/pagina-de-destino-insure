@@ -2,6 +2,10 @@ import React from 'react';
 import { ReactComponent as Logo } from '../img/logo.svg';
 import { ReactComponent as IconeHamburger } from '../img/icon-hamburger.svg';
 import { ReactComponent as IconeClose } from '../img/icon-close.svg';
+import imageIntro from '../img/image-intro-mobile.jpg';
+import patternIntroLeft from '../img/bg-pattern-intro-left-mobile.svg'
+import patternIntroRight from '../img/bg-pattern-intro-right-mobile.svg'
+import patternNav from '../img/bg-pattern-mobile-nav.svg'
 import useMedia from '../hooks/useMedia';
 import styles from '../style/components/Header.module.scss' ;
 
