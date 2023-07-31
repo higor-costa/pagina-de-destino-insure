@@ -124,4 +124,19 @@ body {
     @include fonte-texto(18);
     margin: 30px 0 50px 0;
   }
+
+  .link {
+    color: $cinza-muito-claro;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 2px solid currentColor;
+    z-index: 1;
+    transition: .3s;
+
+    &:hover {
+      background: $cinza-muito-claro;
+      color: $violeta-escuro;
+    }
+  }
 }
