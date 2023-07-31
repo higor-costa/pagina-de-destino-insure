@@ -8,3 +8,10 @@ body {
 .removeScroll {
   overflow: hidden;
 }
+
+.cabecalho > .container {
+  nav {
+    @include displayFlex(center, space-between);
+    padding: 20px;
+  }
+}
