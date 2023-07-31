@@ -32,4 +32,11 @@ body {
     left: 0;
     z-index: -1000;
   }
+
+  .menuActive {
+    z-index: 1000;
+    opacity: 1;
+    transform: initial;
+    transition: .3s;
+  }
 }
