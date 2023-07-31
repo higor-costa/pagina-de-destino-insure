@@ -76,3 +76,10 @@ $fonte-texto: 'Karla', sans-serif;
     }
   }
 }
+
+// Display flex
+@mixin displayFlex($align: center, $justify: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
