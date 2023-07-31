@@ -13,6 +13,11 @@ const Header = () => {
   const mobile = useMedia('(max-width: 767px');
   const [mobileMenu, setMobileMenu] = React.useState(false);
 
+  React.useEffect(() => {
+    if (mobileMenu) document.body.classList.add(`${styles.removeScroll}`);
+    else document.body.classList.remove(`${styles.removeScroll}`);
+  }, [mobileMenu]);
+
   return (
     <header className={styles.cabecalho}>
       <div className={styles.container}>
