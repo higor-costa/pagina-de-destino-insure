@@ -38,7 +38,7 @@ const Header = () => {
               <a href="#">Account</a>
             </li>
             <li>
-              <a href="#">View Plans</a>
+              <a href="#" className={styles.viewPlans}>View Plans</a>
             </li>
             <img
               src={patternNav}
