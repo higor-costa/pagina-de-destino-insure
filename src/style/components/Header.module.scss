@@ -46,4 +46,13 @@ body {
     margin: 40px 20px;
     text-align: center;
   }
+
+  a {
+    @include fonte-texto(18);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $cinza-muito-claro;
+    cursor: pointer;
+  }
 }
