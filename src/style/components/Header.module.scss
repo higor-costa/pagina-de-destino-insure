@@ -14,4 +14,10 @@ body {
     @include displayFlex(center, space-between);
     padding: 20px;
   }
+
+  .buttonMenu {
+    border: none;
+    display: flex;
+    height: fit-content;
+  }
 }
