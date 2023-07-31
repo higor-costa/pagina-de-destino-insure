@@ -20,4 +20,16 @@ body {
     display: flex;
     height: fit-content;
   }
+
+  .menu {
+    background: $violeta-muito-escuro;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    top: 4.4rem;
+    transform: translateY(-1rem);
+    left: 0;
+    z-index: -1000;
+  }
 }
