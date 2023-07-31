@@ -55,4 +55,11 @@ body {
     color: $cinza-muito-claro;
     cursor: pointer;
   }
+
+  a.viewPlans {
+    display: block;
+    padding: 10px 0;
+    border: 2px solid currentColor;
+  }
+
 }
