@@ -90,5 +90,9 @@ body {
   .image {
     @include displayFlex;
     width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 }
