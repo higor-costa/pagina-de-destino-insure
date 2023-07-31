@@ -77,4 +77,13 @@ body {
   @include displayFlex;
   padding: 0px;
   flex-direction: column-reverse;
+
+  .text {
+    @include displayFlex;
+    flex-direction: column;
+    position: relative;
+    color: $cinza-muito-claro;
+    padding: 100px 30px;
+    text-align: center;
+  }
 }
