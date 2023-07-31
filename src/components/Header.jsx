@@ -22,7 +22,9 @@ const Header = () => {
     <header className={styles.cabecalho}>
       <div className={styles.container}>
         <nav>
-          <Logo className={styles.logo} />
+          <a href="#">
+            <Logo className={styles.logo} />
+          </a>
           {mobile && (
             <button
               onClick={() => setMobileMenu(!mobileMenu)}
