@@ -27,7 +27,7 @@ const Header = () => {
               {mobileMenu ? <IconeClose /> : <IconeHamburger />}
             </button>
           )}
-          <ul className={styles.menu}>
+          <ul className={`${styles.menu} ${mobileMenu && styles.menuActive}`}>
             <li>
               <a href="#">How We Work</a>
             </li>
