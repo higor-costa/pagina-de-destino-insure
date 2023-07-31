@@ -72,3 +72,9 @@ body {
 .mainContent {
   background: $violeta-escuro;
 }
+
+.mainContent > .container {
+  @include displayFlex;
+  padding: 0px;
+  flex-direction: column-reverse;
+}
