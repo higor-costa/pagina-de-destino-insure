@@ -54,4 +54,11 @@
   position: relative;
   padding: 60px 20px;
   margin-top: 150px;
+
+  h3 {
+    @include fonte-titulo(45);
+    font-weight: normal;
+    z-index: 100;
+    position: relative;
+  }
 }
