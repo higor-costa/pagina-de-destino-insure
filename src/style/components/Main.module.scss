@@ -16,5 +16,16 @@
     font-weight: normal;
     margin-bottom: 80px;
     position: relative;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 60%;
+      height: 2px;
+      background: $violeta-acinzentado-escuro;
+      left: 50%;
+      bottom: 90px;
+      transform: translateX(-50%);
+    }
   }
 }
