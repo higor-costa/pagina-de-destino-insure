@@ -61,4 +61,20 @@
     z-index: 100;
     position: relative;
   }
+
+  .button {
+    @include fonte-texto(16);
+    letter-spacing: 2px;
+    display: inline-block;
+    color: $cinza-muito-claro;
+    text-transform: uppercase;
+    border: 2px solid $cinza-muito-claro;
+    padding: 15px 30px;
+    margin-top: 50px;
+    transition: .3s;
+    &:hover {
+      background: $cinza-muito-claro;
+      color: $violeta-escuro;
+    }
+  }
 }
