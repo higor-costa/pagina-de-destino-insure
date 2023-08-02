@@ -9,3 +9,12 @@
     flex-direction: column;
   }
 }
+
+.mainContent {
+  h2 {
+    @include fonte-titulo(45);
+    font-weight: normal;
+    margin-bottom: 80px;
+    position: relative;
+  }
+}
