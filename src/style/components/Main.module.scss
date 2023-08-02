@@ -3,4 +3,9 @@
 
 .container {
   padding: 200px 30px;
+
+  .mainContent {
+    @include displayFlex;
+    flex-direction: column;
+  }
 }
