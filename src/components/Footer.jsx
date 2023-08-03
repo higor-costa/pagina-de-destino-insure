@@ -9,8 +9,57 @@ import illustration from '../img/bg-pattern-footer-mobile.svg';
 
 const Footer = () => {
   return (
-    <footer></footer>
-  )
+    <footer>
+      <img src={illustration} alt="Illustration" />
+      <div className={styles.container}>
+        <header className={styles.header}>
+          <Logo />
+          <div className={styles.nets}>
+            <Facebook />
+            <Twitter />
+            <Pinterest />
+            <Instagram />
+          </div>
+        </header>
+        <main className={styles.mainContent}>
+          <div className={styles.linkBox}>
+            <h4>Our Company</h4>
+            <ul className={styles.linkList}>
+              <li><a href="#">How We Work</a></li>
+              <li><a href="#">Why Insure?</a></li>
+              <li><a href="#">Check Price</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div className={styles.linkBox}>
+            <h4>Help Me</h4>
+            <ul className={styles.linkList}>
+              <li><a href="#">Faq</a></li>
+              <li><a href="#">Terms Of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+          <div className={styles.linkBox}>
+            <h4>Contacts</h4>
+            <ul className={styles.linkList}>
+              <li><a href="#">Sales</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Live Chat</a></li>
+            </ul>
+          </div>
+          <div className={styles.linkBox}>
+            <h4>Others</h4>
+            <ul className={styles.linkList}>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Licenses</a></li>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
