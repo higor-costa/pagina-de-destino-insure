@@ -14,11 +14,11 @@ const Footer = () => {
       <div className={styles.container}>
         <header className={styles.header}>
           <Logo />
-          <div className={styles.nets}>
-            <Facebook />
-            <Twitter />
-            <Pinterest />
-            <Instagram />
+          <div className={styles.socialMedia}>
+            <Facebook className={styles.media} />
+            <Twitter className={styles.media} />
+            <Pinterest className={styles.media} />
+            <Instagram className={styles.media} />
           </div>
         </header>
         <main className={styles.mainContent}>
