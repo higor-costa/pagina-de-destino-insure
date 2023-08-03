@@ -19,3 +19,11 @@ footer {
     gap: 40px;
   }
 }
+
+.header {
+  @include displayFlex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $violeta-acinzentado-escuro;
+}
