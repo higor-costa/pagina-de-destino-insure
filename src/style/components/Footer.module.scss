@@ -61,4 +61,19 @@ footer {
     color: $violeta-acinzentado-escuro;
     margin-bottom: 30px;
   }
+
+  .linkList {
+    @include displayFlex;
+    flex-direction: column;
+    gap: 10px;
+
+    a {
+      color: $violeta-muito-escuro;
+      font-weight: bold;
+      transition: text-decoration .3s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
