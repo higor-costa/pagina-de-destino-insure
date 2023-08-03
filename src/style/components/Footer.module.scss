@@ -11,4 +11,11 @@ footer {
     top: 0;
     width: 100%;
   }
+
+  .container {
+    @include displayFlex;
+    flex-direction: column;
+    padding: 50px 30px 0;
+    gap: 40px;
+  }
 }
