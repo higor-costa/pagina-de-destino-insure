@@ -4,4 +4,11 @@
 footer {
   background: $cinza-muito-claro;
   position: relative;
+
+  > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }
