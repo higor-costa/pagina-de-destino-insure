@@ -45,3 +45,11 @@ footer {
     }
   }
 }
+
+.mainContent {
+  @include displayFlex;
+  flex-direction: column;
+  gap: 30px;
+  @include fonte-texto(16);
+  text-transform: uppercase;
+}
