@@ -57,6 +57,9 @@ body {
   li {
     margin: 40px 30px;
     text-align: center;
+    @include device(m) {
+      margin: 0;
+    }
   }
 
   a {
