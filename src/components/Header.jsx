@@ -57,6 +57,20 @@ const Header = () => {
       </div>
 
       <main className={styles.mainContent}>
+        {!mobile && (
+          <>
+            <img 
+              src={patternIntroRightDesktop} 
+              alt="Right Illustration" 
+              className={styles.illustrationRightDesktop}
+            />
+            <img 
+              src={patternIntroLeftDesktop} 
+              alt="Left Illustration" 
+              className={styles.illustrationLeftDesktop}
+            />
+          </>
+        )}
         <div className={styles.container}>
           <div className={styles.text}>
             {mobile && (
