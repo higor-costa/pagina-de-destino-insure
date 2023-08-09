@@ -81,7 +81,7 @@ $s-device: 500px;
   margin: 0 auto;
   position: relative;
   @include device(m) {
-    max-width: $m-device;
+    min-width: $m-device;
   }
   @include device(s) {
     max-width: $s-device;
