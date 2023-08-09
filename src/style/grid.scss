@@ -77,7 +77,7 @@ $s-device: 500px;
 
 // Container
 @mixin container {
-  max-width: $l-device;
+  max-width: $xl-device;
   margin: 0 auto;
   position: relative;
   @include device(m) {
