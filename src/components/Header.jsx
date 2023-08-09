@@ -77,7 +77,7 @@ const Header = () => {
           </>
         )}
         <div className={styles.container}>
-          <div className={styles.text}>
+          <div className={`${styles.text} ${desktop ? 'grid-6' : ''}`}>
             {mobile && (
               <img
                 src={patternIntroLeft}
@@ -104,7 +104,7 @@ const Header = () => {
               />
             )}
           </div>
-          <div className={styles.image}>
+          <div className={`${styles.image} ${desktop ? 'grid-6' : ''}`}>
             <img src={imageIntro} alt="Family photo" />
           </div>
         </div>
