@@ -160,6 +160,14 @@ body {
   .image {
     @include displayFlex;
     width: 100%;
+    @include device(l) {
+      position: absolute;
+      right: 0;      
+      top: 5.8rem;
+    }
+    @include device(lxl) {
+      top: 5.5rem;
+    }
 
     img {
       width: 100%;
