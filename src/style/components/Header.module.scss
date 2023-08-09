@@ -99,6 +99,9 @@ body {
     width: 100%;
     position: absolute;
     top: 60%;
+    @include device(m) {
+      display: none;
+    }
   }
 }
 
