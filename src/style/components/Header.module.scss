@@ -196,6 +196,20 @@ body {
 
   .title {
     @include fonte-titulo(50);
+    @include device(m) {
+      @include fonte-titulo(55);
+    }
+    @include device(l) {
+      &::before {
+        content: '';
+        width: 7.5rem;
+        height: 2px;
+        background: $violeta-acinzentado-escuro;
+        position: absolute;
+        left: 0;
+        bottom: 85%;
+      }
+    }
     font-weight: 400;
     line-height: 1;
     z-index: 1;
