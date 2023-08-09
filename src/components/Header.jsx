@@ -105,7 +105,7 @@ const Header = () => {
             )}
           </div>
           <div className={`${styles.image} ${desktop ? 'grid-6' : ''}`}>
-            <img src={imageIntro} alt="Family photo" />
+            <img src={mobile ? imageIntro : imageIntroDesktop} alt="Family photo" />
           </div>
         </div>
       </main>
