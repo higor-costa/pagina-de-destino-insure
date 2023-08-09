@@ -134,6 +134,11 @@ body {
   @include displayFlex;
   padding: 0px;
   flex-direction: column-reverse;
+  @include device(l) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start
+  }
 
   .text {
     @include displayFlex;
