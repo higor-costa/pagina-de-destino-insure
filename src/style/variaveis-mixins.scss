@@ -60,18 +60,38 @@ $fonte-texto: 'Karla', sans-serif;
 
 // Mixin de media-query
 @mixin device($size) {
+  @if $size == xl {
+    @media screen and (max-width: #{$xl-device}) {
+      @content;
+    }
+  }
+  @if $size == lxl {
+    @media screen and (min-width: #{$l-device}) and (max-width: #{$xl-device - 1}){
+      @content;
+    }
+  }
   @if $size == l {
     @media screen and (min-width: #{$l-device}) {
       @content;
     }
   }
-  @else if $size == m {
+  @else if $size == ml {
     @media screen and (min-width: #{$m-device}) and (max-width: #{$l-device - 1}) {
       @content;
     }
   }
+  @else if $size == m {
+    @media screen and (min-width: #{$m-device}) {
+      @content;
+    }
+  }
+  @else if $size == sl {
+    @media screen and (min-width: #{$s-device}) and (max-width: #{$l-device - 1}) {
+      @content;
+    }
+  }
   @else if $size == s {
-    @media screen and (max-width: #{$m-device - 1}) {
+    @media screen and (max-width: #{$s-device - 1}) {
       @content;
     }
   }
