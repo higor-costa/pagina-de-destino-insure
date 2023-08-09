@@ -218,6 +218,12 @@ body {
   .paragraph {
     @include fonte-texto(18);
     margin: 30px 0 50px 0;
+    @include device(m) {
+      max-width: 600px;
+    }
+    @include device(xl) {
+      font-size: .825rem;
+    }
   }
 
   .link {
