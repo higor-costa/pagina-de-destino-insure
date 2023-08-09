@@ -11,6 +11,7 @@ import patternIntroRightDesktop from '../img/bg-pattern-intro-right-desktop.svg'
 import patternNav from '../img/bg-pattern-mobile-nav.svg';
 import useMedia from '../hooks/useMedia';
 import styles from '../style/components/Header.module.scss';
+import '../style/grid.scss';
 
 const Header = () => {
   const mobile = useMedia('(max-width: 767px');
