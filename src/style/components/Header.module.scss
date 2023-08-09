@@ -111,6 +111,23 @@ body {
   @include device(l) {
     padding: 0 20px;
   }
+  
+  .illustrationLeftDesktop, 
+  .illustrationRightDesktop {
+    position: absolute;
+  }
+
+  .illustrationLeftDesktop {
+    left: 0;
+    top: 65%;
+    width: 10rem;
+  }
+
+  .illustrationRightDesktop {
+    right: 0;
+    top: 0;
+    width: 20rem;
+  }
 }
 
 .mainContent > .container {
