@@ -147,6 +147,14 @@ body {
     color: $cinza-muito-claro;
     padding: 100px 30px;
     text-align: center;
+    @include device (m) {
+      padding: 100px 0;
+    }
+    @include device(l) {
+      align-items: flex-start;
+      text-align: left;
+      padding: 150px 0;
+    }
   }
 
   .image {
