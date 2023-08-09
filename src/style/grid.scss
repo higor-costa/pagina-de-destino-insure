@@ -29,7 +29,7 @@ $s-device: 500px;
 
 @for $i from 1 through $colunas {
   .grid-#{$i} {
-    width: grid($i);
+    width: grid($i) !important;
   }
 }
 
