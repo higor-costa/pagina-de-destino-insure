@@ -69,6 +69,15 @@ body {
     letter-spacing: 2px;
     color: $cinza-muito-claro;
     cursor: pointer;
+    transition: .4s;
+    @include device(m) {
+      font-size: .8rem;
+      font-weight: bold;
+      color: $violeta-acinzentado-escuro;
+      &:hover {
+        color: $violeta-muito-escuro;
+      }
+    } 
   }
 
   a.viewPlans {
