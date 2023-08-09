@@ -84,6 +84,15 @@ body {
     display: block;
     padding: 10px 0;
     border: 2px solid currentColor;
+    @include device(m) {
+      color: $violeta-muito-escuro;
+      border-color: $violeta-muito-escuro;
+      padding: 10px 30px;
+      &:hover {
+        color: $cinza-muito-claro;
+        background: $violeta-muito-escuro;
+      } 
+    } 
   }
 
   .illustration {
