@@ -15,6 +15,7 @@ import '../style/grid.scss';
 
 const Header = () => {
   const mobile = useMedia('(max-width: 767px');
+  const desktop = useMedia('(min-width: 1000px');
   const [mobileMenu, setMobileMenu] = React.useState(false);
 
   React.useEffect(() => {
