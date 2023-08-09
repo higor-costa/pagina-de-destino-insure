@@ -107,6 +107,10 @@ body {
 
 .mainContent {
   background: $violeta-escuro;
+  position: relative;
+  @include device(l) {
+    padding: 0 20px;
+  }
 }
 
 .mainContent > .container {
