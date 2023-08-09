@@ -32,6 +32,17 @@ body {
     transform: translateY(-1rem);
     left: 0;
     z-index: -1000;
+    @include device(m) {
+      background: transparent;
+      width: auto;
+      opacity: initial;
+      transform: initial;
+      position: initial;
+      height: auto;
+      z-index: initial;
+      @include displayFlex(center, flex-end);
+      gap: 30px;
+    }
   }
 
   .menuActive {
