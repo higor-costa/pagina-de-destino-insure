@@ -8,6 +8,9 @@ import styles from '../style/components/Main.module.scss';
 import useMedia from '../hooks/useMedia';
 
 const Main = () => {
+  const desktop = useMedia('(min-width: 1000px)');
+  const tablet = useMedia('(min-width: 768px)');
+  
   return (
     <main className={styles.container}>
       <section className={styles.mainContent}>
