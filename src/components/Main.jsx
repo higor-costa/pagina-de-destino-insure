@@ -10,7 +10,7 @@ import useMedia from '../hooks/useMedia';
 const Main = () => {
   const desktop = useMedia('(min-width: 1000px)');
   const tablet = useMedia('(min-width: 768px)');
-  
+
   return (
     <main className={styles.container}>
       <section className={styles.mainContent}>
@@ -36,9 +36,10 @@ const Main = () => {
             <PeopleFirst className={styles.image} />
             <h4>People First</h4>
             <p>
-              Our plans aren`t full of conditions and clauses to prevent payouts.
-              We make sure you´re covered when you nedd it.
+              Our plans aren`t full of conditions and clauses to prevent
+              payouts. We make sure you´re covered when you nedd it.
             </p>
+          </div>
         </div>
       </section>
       <aside className={styles.callToAction}>
@@ -58,7 +59,7 @@ const Main = () => {
             alt="Illustration"
             className={styles.illustration}
           />
-        )} 
+        )}
       </aside>
     </main>
   );
