@@ -39,6 +39,9 @@
     text-align: center;
     &:nth-child(3) {
       margin: 50px 0;
+      @include device(l) {
+        margin: 0;
+      }
     }
 
     h4 {
