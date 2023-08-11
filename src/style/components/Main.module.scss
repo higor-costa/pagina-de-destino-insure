@@ -38,6 +38,13 @@
       }
     }
   }
+  
+  .containerCards {
+    @include device(m) {
+      @include displayFlex;
+      flex-wrap: wrap;
+    }
+  }
 
   .card {
     text-align: center;
