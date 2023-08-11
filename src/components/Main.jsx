@@ -5,6 +5,7 @@ import { ReactComponent as PeopleFirst } from '../img/icon-people-first.svg';
 import illustrationPattern from '../img/bg-pattern-how-we-work-mobile.svg';
 import illustrationPatternDesktop from '../img/bg-pattern-how-we-work-desktop.svg';
 import styles from '../style/components/Main.module.scss';
+import useMedia from '../hooks/useMedia';
 
 const Main = () => {
   return (
