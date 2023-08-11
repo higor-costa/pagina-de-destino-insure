@@ -42,11 +42,19 @@ const Main = () => {
         <a href="#" className={styles.button}>
           How We Work
         </a>
-        <img
-          src={illustrationPattern}
-          alt="Illustration"
-          className={styles.illustration}
-        />
+        {tablet ? (
+          <img
+            src={illustrationPatternDesktop}
+            alt="Illustration"
+            className={styles.illustration}
+          />
+        ) : (
+          <img
+            src={illustrationPattern}
+            alt="Illustration"
+            className={styles.illustration}
+          />
+        )} 
       </aside>
     </main>
   );
