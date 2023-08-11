@@ -81,6 +81,10 @@
   position: relative;
   padding: 60px 20px;
   margin-top: 150px;
+  @include device(m) {
+    @include displayFlex(center, space-between);
+    padding: 50px;
+  }
 
   h3 {
     @include fonte-titulo(45);
