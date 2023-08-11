@@ -23,21 +23,21 @@ const Main = () => {
             Dont´t get stuck filling in tedious forms
           </p>
         </div>
-        <div className={styles.card}>
-          <AffordablePrices className={styles.image} />
-          <h4>Affordable Prices</h4>
-          <p>
-            We don´t you worrying about high monthly costs. Our prices may be
-            low, but we still offer the coverage possible.
-          </p>
-        </div>
-        <div className={styles.card}>
-          <PeopleFirst className={styles.image} />
-          <h4>People First</h4>
-          <p>
-            Our plans aren`t full of conditions and clauses to prevent payouts.
-            We make sure you´re covered when you nedd it.
-          </p>
+          <div className={`${desktop ? 'grid-4' : ''} ${styles.card}`}>
+            <AffordablePrices className={styles.image} />
+            <h4>Affordable Prices</h4>
+            <p>
+              We don´t you worrying about high monthly costs. Our prices may be
+              low, but we still offer the coverage possible.
+            </p>
+          </div>
+          <div className={`${desktop ? 'grid-4' : ''} ${styles.card}`}>
+            <PeopleFirst className={styles.image} />
+            <h4>People First</h4>
+            <p>
+              Our plans aren`t full of conditions and clauses to prevent payouts.
+              We make sure you´re covered when you nedd it.
+            </p>
         </div>
       </section>
       <aside className={styles.callToAction}>
