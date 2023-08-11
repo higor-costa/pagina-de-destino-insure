@@ -3,6 +3,9 @@
 
 .container {
   padding: 200px 30px;
+  @include device(l) {
+    padding-top: 18rem;
+  }
 
   .mainContent {
     @include displayFlex;
