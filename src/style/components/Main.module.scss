@@ -1,5 +1,5 @@
-@import '../grid.scss';
-@import '../variaveis-mixins.scss';
+@import "../grid.scss";
+@import "../variaveis-mixins.scss";
 
 .container {
   padding: 200px 30px;
@@ -11,7 +11,7 @@
     @include displayFlex;
     flex-direction: column;
     @include device(l) {
-      align-items:  flex-start;
+      align-items: flex-start;
     }
   }
 }
@@ -22,8 +22,9 @@
     font-weight: normal;
     margin-bottom: 80px;
     position: relative;
+
     &::before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 60%;
@@ -38,7 +39,7 @@
       }
     }
   }
-  
+
   .containerCards {
     @include device(m) {
       @include displayFlex;
@@ -66,7 +67,7 @@
     p {
       @include fonte-texto(16);
       @include device(lxl) {
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
       max-width: 23rem;
       color: $violeta-acinzentado-escuro;
@@ -109,7 +110,7 @@
     border: 2px solid $cinza-muito-claro;
     padding: 15px 30px;
     margin-top: 50px;
-    transition: .3s;
+    transition: 0.3s;
     &:hover {
       background: $cinza-muito-claro;
       color: $violeta-escuro;
@@ -119,7 +120,7 @@
       z-index: 100;
     }
     @include device(ml) {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
