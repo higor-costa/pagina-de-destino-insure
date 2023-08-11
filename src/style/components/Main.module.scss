@@ -10,6 +10,9 @@
   .mainContent {
     @include displayFlex;
     flex-direction: column;
+    @include device(l) {
+      align-items:  flex-start;
+    }
   }
 }
 
