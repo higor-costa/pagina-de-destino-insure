@@ -65,6 +65,10 @@
 
     p {
       @include fonte-texto(16);
+      @include device(lxl) {
+        font-size: .8rem;
+      }
+      max-width: 23rem;
       color: $violeta-acinzentado-escuro;
     }
   }
