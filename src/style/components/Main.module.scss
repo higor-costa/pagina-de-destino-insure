@@ -32,6 +32,10 @@
       left: 50%;
       bottom: 90px;
       transform: translateX(-50%);
+      @include device(l) {
+        width: 10%;
+        left: 5%;
+      }
     }
   }
 
