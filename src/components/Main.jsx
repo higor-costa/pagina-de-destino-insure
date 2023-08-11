@@ -14,15 +14,16 @@ const Main = () => {
   return (
     <main className={styles.container}>
       <section className={styles.mainContent}>
-        <h2 className={styles.title}>We´re Different</h2>
-        <div className={styles.card}>
-          <SnappyProcess className={styles.image} />
-          <h4>Snappy Process</h4>
-          <p>
-            Our application process can be completed in minutes, not hours.
-            Dont´t get stuck filling in tedious forms
-          </p>
-        </div>
+        <h2 className={desktop ? 'grid-12' : ''}>We´re Different</h2>
+        <div className={styles.containerCards}>
+          <div className={`${desktop ? 'grid-4' : ''} ${styles.card}`}>
+            <SnappyProcess className={styles.image} />
+            <h4>Snappy Process</h4>
+            <p>
+              Our application process can be completed in minutes, not hours.
+              Dont´t get stuck filling in tedious forms
+            </p>
+          </div>
           <div className={`${desktop ? 'grid-4' : ''} ${styles.card}`}>
             <AffordablePrices className={styles.image} />
             <h4>Affordable Prices</h4>
