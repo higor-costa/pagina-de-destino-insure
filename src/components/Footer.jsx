@@ -19,8 +19,9 @@ const Footer = () => {
       ) : (
       <img src={illustration} alt="Illustration" />
       <div className={styles.container}>
-        <header className={styles.header}>
-          <Logo />
+        <header className={`${tablet ? 'grid-12' : ''} ${styles.header}`}>
+          <a href="#">
+            <Logo />
           <div className={styles.socialMedia}>
             <Facebook className={styles.media} />
             <Twitter className={styles.media} />
