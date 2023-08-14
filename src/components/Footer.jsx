@@ -14,6 +14,9 @@ const Footer = () => {
 
   return (
     <footer>
+      {tablet ? (
+        <img src={illustrationDesktop} alt="Illustration" />
+      ) : (
       <img src={illustration} alt="Illustration" />
       <div className={styles.container}>
         <header className={styles.header}>
@@ -25,8 +28,8 @@ const Footer = () => {
             <Instagram className={styles.media} />
           </div>
         </header>
-        <main className={styles.mainContent}>
-          <div className={styles.linkBox}>
+        <main className={`${tablet ? 'grid-12' : ''} ${styles.mainContent}`}>
+          <div className={`${tablet ? 'grid-3' : ''} ${styles.linkBox}`}>
             <h4>Our Company</h4>
             <ul className={styles.linkList}>
               <li><a href="#">How We Work</a></li>
@@ -35,7 +38,7 @@ const Footer = () => {
               <li><a href="#">Reviews</a></li>
             </ul>
           </div>
-          <div className={styles.linkBox}>
+          <div className={`${tablet ? 'grid-3' : ''} ${styles.linkBox}`}>
             <h4>Help Me</h4>
             <ul className={styles.linkList}>
               <li><a href="#">Faq</a></li>
@@ -44,7 +47,7 @@ const Footer = () => {
               <li><a href="#">Cookies</a></li>
             </ul>
           </div>
-          <div className={styles.linkBox}>
+          <div className={`${tablet ? 'grid-3' : ''} ${styles.linkBox}`}>
             <h4>Contacts</h4>
             <ul className={styles.linkList}>
               <li><a href="#">Sales</a></li>
@@ -52,7 +55,7 @@ const Footer = () => {
               <li><a href="#">Live Chat</a></li>
             </ul>
           </div>
-          <div className={styles.linkBox}>
+          <div className={`${tablet ? 'grid-3' : ''} ${styles.linkBox}`}>
             <h4>Others</h4>
             <ul className={styles.linkList}>
               <li><a href="#">Careers</a></li>
