@@ -17,7 +17,8 @@ const Footer = () => {
       {tablet ? (
         <img src={illustrationDesktop} alt="Illustration" />
       ) : (
-      <img src={illustration} alt="Illustration" />
+        <img src={illustration} alt="Illustration" />
+      )}
       <div className={styles.container}>
         <header className={`${tablet ? 'grid-12' : ''} ${styles.header}`}>
           <a href="#">
