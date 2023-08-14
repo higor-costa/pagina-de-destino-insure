@@ -72,6 +72,10 @@ footer {
 
 .linkBox {
   text-align: center;
+  @include device(m) {
+    text-align: start;
+    margin: 0;
+  }
 
   h4 {
     color: $violeta-acinzentado-escuro;
