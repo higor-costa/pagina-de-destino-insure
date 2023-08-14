@@ -86,6 +86,9 @@ footer {
     @include displayFlex;
     flex-direction: column;
     gap: 10px;
+    @include device(m) {
+      align-items: flex-start;
+    }
 
     a {
       color: $violeta-muito-escuro;
