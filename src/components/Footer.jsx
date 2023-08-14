@@ -7,6 +7,7 @@ import { ReactComponent as Pinterest } from '../img/icon-pinterest.svg';
 import { ReactComponent as Instagram } from '../img/icon-instagram.svg';
 import illustration from '../img/bg-pattern-footer-mobile.svg';
 import illustrationDesktop from '../img/bg-pattern-footer-desktop.svg';
+import useMedia from '../hooks/useMedia';
 
 const Footer = () => {
   return (
