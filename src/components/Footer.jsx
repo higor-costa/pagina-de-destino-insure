@@ -10,6 +10,8 @@ import illustrationDesktop from '../img/bg-pattern-footer-desktop.svg';
 import useMedia from '../hooks/useMedia';
 
 const Footer = () => {
+  const tablet = useMedia('(min-width: 768px)');
+
   return (
     <footer>
       <img src={illustration} alt="Illustration" />
