@@ -42,6 +42,10 @@ footer {
   .socialMedia {
     @include displayFlex;
     gap: 15px;
+    @include device(m) {
+      justify-content: flex-end;
+      margin: 0;
+    }
 
     .media {
       cursor: pointer;
