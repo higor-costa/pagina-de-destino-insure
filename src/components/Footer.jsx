@@ -22,7 +22,8 @@ const Footer = () => {
         <header className={`${tablet ? 'grid-12' : ''} ${styles.header}`}>
           <a href="#">
             <Logo />
-          <div className={styles.socialMedia}>
+          </a>
+          <div className={`${tablet ? 'grid-6' : ''} ${styles.socialMedia}`}>
             <Facebook className={styles.media} />
             <Twitter className={styles.media} />
             <Pinterest className={styles.media} />
