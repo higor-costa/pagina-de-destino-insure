@@ -34,9 +34,14 @@ footer {
     justify-content: space-between;
   }
 
-  > svg {
-    display: block;
-    margin: 0 auto 40px auto;
+  a {
+    > svg {
+      display: block;
+      margin: 0 auto 30px auto;
+      @include device(m) {
+        margin: 0;
+      }
+    }
   }
 
   .socialMedia {
