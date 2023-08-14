@@ -27,7 +27,7 @@ footer {
   @include displayFlex;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   border-bottom: 1px solid $violeta-acinzentado-escuro;
   @include device(m) {
     flex-direction : row;
