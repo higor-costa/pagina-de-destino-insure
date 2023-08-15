@@ -60,6 +60,11 @@ $fonte-texto: 'Karla', sans-serif;
 
 // Mixin de media-query
 @mixin device($size) {
+  @if $size == xxl {
+    @media screen and (min-width: #{$xxl-device}) {
+      @content;
+    }
+  }
   @if $size == xl {
     @media screen and (max-width: #{$xl-device}) {
       @content;

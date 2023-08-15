@@ -14,6 +14,9 @@ body {
   nav {
     @include displayFlex(center, space-between);
     padding: 20px;
+    @include device(xxl) {
+      padding: 20px 0;
+    }
   }
 
   .buttonMenu {
