@@ -30,6 +30,9 @@
     font-weight: normal;
     margin-bottom: 80px;
     position: relative;
+    @include device(xxl) {
+      margin: 0 0 80px 0;
+    }
 
     &::before {
       content: "";
