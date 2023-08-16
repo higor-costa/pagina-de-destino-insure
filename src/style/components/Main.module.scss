@@ -66,6 +66,9 @@
     @include device(l) {
       text-align: start;
     }
+    @include device(xxl) {
+      margin-left: 0;
+    } 
     &:nth-child(2) {
       margin: 50px 0;
       @include device(l) {
