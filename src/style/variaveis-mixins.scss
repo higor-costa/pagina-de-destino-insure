@@ -65,6 +65,11 @@ $fonte-texto: 'Karla', sans-serif;
       @content;
     }
   }
+  @if $size == lxxl {
+    @media screen and (min-width: #{$l-device}) and (max-width: #{$xxl-device}) {
+      @content;
+    }
+  }
   @if $size == xl {
     @media screen and (max-width: #{$xl-device}) {
       @content;
