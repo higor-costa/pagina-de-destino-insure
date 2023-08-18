@@ -20,7 +20,7 @@ const Footer = () => {
         <img src={illustration} alt="Illustration" />
       )}
       <div className={styles.container}>
-        <header className={`${tablet ? 'grid-12' : ''} ${styles.header}`}>
+        <header className={styles.header}>
           <a href="#">
             <Logo />
           </a>
@@ -31,7 +31,7 @@ const Footer = () => {
             <Instagram className={styles.media} />
           </div>
         </header>
-        <main className={`${tablet ? 'grid-12' : ''} ${styles.mainContent}`}>
+        <main className={styles.mainContent}>
           <div className={`${tablet ? 'grid-3' : ''} ${styles.linkBox}`}>
             <h4>Our Company</h4>
             <ul className={styles.linkList}>
