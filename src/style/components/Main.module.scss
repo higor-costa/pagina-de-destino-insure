@@ -109,8 +109,10 @@
     font-weight: normal;
     z-index: 100;
     position: relative;
+    max-width: 25rem;
+    margin: 0 auto;
     @include device(m) {
-      max-width: 25rem;
+      margin: initial;
       text-align: start;
     }
     @include device(ml) {
