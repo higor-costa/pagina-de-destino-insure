@@ -19,6 +19,14 @@ footer {
     @include displayFlex;
     flex-direction: column;
     padding: 50px 30px 0;
+    @include device(lxxl) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @include device(xxl) {
+      padding-left: 0;
+      padding-right: 0;
+    }
     gap: 40px;
   }
 }
