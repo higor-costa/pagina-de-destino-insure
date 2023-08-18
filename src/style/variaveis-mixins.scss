@@ -105,6 +105,11 @@ $fonte-texto: 'Karla', sans-serif;
       @content;
     }
   }
+  @else if $size == xs {
+    @media screen and (min-width: #{$s-device}) {
+      @content;
+    }
+  }
 }
 
 // Display flex
