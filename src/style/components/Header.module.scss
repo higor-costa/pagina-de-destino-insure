@@ -237,6 +237,9 @@ body {
     border: 2px solid currentColor;
     z-index: 1;
     transition: .3s;
+    @include device(xs) {
+      padding: 12px 24px;
+    }
 
     &:hover {
       background: $cinza-muito-claro;
