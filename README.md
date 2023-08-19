@@ -1,92 +1,71 @@
-# Frontend Mentor - Garanta a página de destino
+# **Projeto de Landing Page utilizando ReactJS, SCSS e Vite**
 
-![Visualização do design para o desafio de codificação da página de destino Insure](./design/desktop-preview.jpg)
+### Descrição:
+Este projeto é uma Landing Page desenvolvida como forma de praticar o uso de tecnologias como ReactJS e SCSS. A estrutura do projeto foi configurada utilizando o Vite, um bundler extremamente rápido para aplicações web. Abaixo estão detalhadas as principais características e tecnologias utilizadas neste projeto.
 
-## Bem-vindo! 👋
+### Características:
 
-Obrigado por verificar este desafio de codificação de front-end.
+- **Tecnologias Utilizadas:** ReactJS, SCSS
+- **Bundler:** Vite
+- **Deployment:** gh-pages
 
-Os desafios do [Frontend Mentor](https://www.frontendmentor.io) ajudam você a melhorar suas habilidades de codificação criando projetos realistas.
+### Desenvolvimento:
 
-**Para fazer este desafio, você precisa ter um conhecimento básico de HTML e CSS.**
+- A Landing Page foi construída utilizando componentes do ReactJS, permitindo uma estrutura modular e reutilizável.
+- Foram utilizados os recursos de Hooks e customHooks para gerenciar o estado e a lógica da aplicação.
+- O SCSS foi adotado para a estilização dos elementos, fazendo uso de recursos avançados como Nesting, loops, funções e condicionais para uma estilização mais eficiente e organizada.
+- O CSS modules foi empregado para evitar conflitos de nomenclatura de classes e garantir um escopo local para o estilo de cada componente.
+- Mixins foram utilizados para reutilização de trechos de estilo em diferentes partes da aplicação.
+- Ícones foram integrados através da biblioteca react-icons, proporcionando uma variedade de ícones prontos para uso.
+- A otimização de imagens foi realizada utilizando o vite-plugin-svgr, convertendo ícones SVG em componentes React.
+- A página está hospedada no GitHub Pages, permitindo o acesso público ao projeto.
+  
+### Instruções de Uso:
 
-## O desafio
+1. **Clonar o Repositório:** Clone este repositório para sua máquina local utilizando o comando:
+   ```
+   git clone https://higor-costa.github.io/pagina-de-destino-insure
+   ```
 
-Seu desafio é construir essa página de destino e deixá-la o mais próximo possível do design.
+2. **Instalar Dependências:** Navegue até o diretório do projeto e instale as dependências utilizando o npm ou yarn:
+   ```
+   cd nome-do-diretorio
+   npm install   // ou 'yarn install'
+   ```
 
-Você pode usar qualquer ferramenta que desejar para ajudá-lo a concluir o desafio. Portanto, se você tem algo que gostaria de praticar, sinta-se à vontade para tentar.
+3. **Rodar Localmente:** Inicie a aplicação em um servidor de desenvolvimento local utilizando o comando:
+   ```
+   npm run dev   // ou 'yarn dev'
+   ```
 
-Seus usuários devem ser capazes de:
+4. **Build para Produção:** Para criar uma versão otimizada para produção, execute o seguinte comando:
+   ```
+   npm run build   // ou 'yarn build'
+   ```
 
-- Veja o layout ideal para o site, dependendo do tamanho da tela do dispositivo
-- Veja os estados de foco para todos os elementos interativos na página
+5. **Deploy no GitHub Pages:** Caso deseje hospedar a aplicação no GitHub Pages, utilize o seguinte comando após a construção:
+   ```
+   npm run deploy   // ou 'yarn deploy'
+   ```
+### Adicione ao package.json os seguintes scripts:
+- `npm run predeploy`: Executa o build da aplicação antes do deploy.
+- `npm run deploy`: Implanta a aplicação no GitHub Pages após o build.
 
-Quer algum apoio no desafio? [Junte-se à nossa comunidade Slack](https://www.frontendmentor.io/slack) e faça perguntas no canal **#help**.
+Ao executar o script **npm run deploy**, o script **npm run predeploy** será executado automaticamente. Ou seja, torna-se desnecessário rodar o comando **npm run build** de forma manual antes de fazer o deploy da aplicação.
 
-## Onde encontrar tudo
+Além desses scripts, configure também a opção "homepage" antes de realizar o deploy. Se você estiver hospedando sua aplicação no GitHub Pages, por exemplo, a estrutura do valor da opção "homepage" seria o caminho do seu repositório no GitHub.
 
-Sua tarefa é construir o projeto para os designs dentro da pasta `/design`. Você encontrará uma versão móvel e uma versão para desktop do design.
+Ex.:  `"homepage": "https://nome-de-usuario.github.io/repositorio/"`
 
-Os designs estão no formato estático JPG. Usar JPGs significa que você precisará usar seu melhor julgamento para estilos como `font-size`, `padding` e `margin`.
+### vite.config.js
+Certifique-se de configurar corretamente a opção "base" no arquivo vite.config.js antes de realizar o deploy.
 
-Se você deseja que os arquivos de design (nós fornecemos as versões Sketch e Figma) inspecionem o design com mais detalhes, você pode [inscrever-se como membro PRO](https://www.frontendmentor.io/pro).
+Ex.: `base: '/pagina-de-destino-insure'`
 
-Você encontrará todos os ativos necessários na pasta `/images`. Os recursos já estão otimizados.
+### Contribuição:
 
-Há também um arquivo `style-guide.md` contendo as informações necessárias, como paleta de cores e fontes.
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Construindo seu projeto
+### Licença:
 
-Sinta-se à vontade para usar qualquer fluxo de trabalho com o qual se sinta confortável. Abaixo está um processo sugerido, mas você não precisa seguir estas etapas:
-
-1. Inicialize seu projeto como um repositório público no [GitHub](https://github.com/). A criação de um repositório facilitará o compartilhamento de seu código com a comunidade, caso você precise de ajuda. Se você não tiver certeza de como fazer isso, [leia este recurso Try Git](https://try.github.io/).
-2. Configure seu repositório para publicar seu código em um endereço da web. Isso também será útil se você precisar de ajuda durante um desafio, pois pode compartilhar a URL do seu projeto com a URL do repositório. Existem várias maneiras de fazer isso e fornecemos algumas recomendações abaixo.
-3. Examine os designs para começar a planejar como você abordará o projeto. Esta etapa é crucial para ajudá-lo a pensar no futuro para que as classes CSS criem estilos reutilizáveis.
-4. Antes de adicionar qualquer estilo, estruture seu conteúdo com HTML. Escrever seu HTML primeiro pode ajudar a focar sua atenção na criação de conteúdo bem estruturado.
-5. Escreva os estilos básicos para seu projeto, incluindo estilos de conteúdo gerais, como `font-family` e `font-size`.
-6. Comece adicionando estilos ao topo da página e trabalhe para baixo. Apenas passe para a próxima seção quando estiver satisfeito por ter concluído a área em que está trabalhando.
-
-## Implantando seu projeto
-
-Como mencionado acima, existem muitas maneiras de hospedar seu projeto gratuitamente. Nossos anfitriões recomendados são:
-
-- [Páginas do GitHub](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-Você pode hospedar seu site usando uma dessas soluções ou qualquer um de nossos outros provedores confiáveis. [Leia mais sobre nossos hosts recomendados e confiáveis](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Crie um `README.md` personalizado
-
-Recomendamos fortemente substituir este `README.md` por um personalizado. Fornecemos um modelo dentro do arquivo [`README-template.md`](./README-template.md) neste código inicial.
-
-O modelo fornece um guia sobre o que adicionar. Um `README` personalizado ajudará você a explicar seu projeto e refletir sobre seus aprendizados. Sinta-se à vontade para editar nosso modelo o quanto quiser.
-
-Depois de adicionar suas informações ao modelo, exclua este arquivo e renomeie o arquivo `README-template.md` para `README.md`. Isso fará com que apareça como o arquivo README do seu repositório.
-
-## Enviando sua solução
-
-Envie sua solução na plataforma para o resto da comunidade ver. Siga nosso ["Guia completo para enviar soluções"](https://medium.com/frontend-mentor/a-complete-guide-to-submitted-solutions-on-frontend-mentor-ac6384162248) para obter dicas sobre como fazer isso.
-
-Lembre-se de que, se estiver procurando feedback sobre sua solução, faça perguntas ao enviá-la. Quanto mais específico e detalhado você for com suas perguntas, maior a chance de obter um feedback valioso da comunidade.
-
-## Compartilhando sua solução
-
-Existem vários lugares onde você pode compartilhar sua solução:
-
-1. Compartilhe sua página de solução no canal **#finished-projects** da [comunidade Slack](https://www.frontendmentor.io/slack).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) e mencione **@frontendmentor**, incluindo o repositório e URLs ativos no tweet. Adoraríamos dar uma olhada no que você construiu e ajudar a compartilhá-lo.
-3. Compartilhe sua solução em outros canais sociais como o LinkedIn.
-4. Faça um blog sobre sua experiência na construção de seu projeto. Escrever sobre seu fluxo de trabalho, escolhas técnicas e falar sobre seu código é uma maneira brilhante de reforçar o que você aprendeu. Ótimas plataformas para escrever são [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/) e [CodeNewbie](https://community.codenewbie.org/).
-
-Fornecemos modelos para ajudá-lo a compartilhar sua solução depois de enviá-la na plataforma. Edite-os e inclua perguntas específicas quando estiver procurando feedback.
-
-Quanto mais específico você for com suas perguntas, mais provável será que outro membro da comunidade lhe dê feedback.
-
-## Tem feedback para nós?
-
-Adoramos receber feedback! Estamos sempre buscando melhorar nossos desafios e nossa plataforma. Portanto, se você tiver algo que gostaria de mencionar, envie um e-mail hi[at]frontendmentor[dot]io.
-
-Este desafio é totalmente gratuito. Por favor, compartilhe com qualquer pessoa que achará útil para a prática.
-
-**Divirta-se construindo!** 🚀
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para obter mais informações.
